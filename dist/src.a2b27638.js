@@ -117,21 +117,21 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"assets/simon-says-sound-1.mp3":[function(require,module,exports) {
+})({"./simon-says-sound-1.mp3":[function(require,module,exports) {
 module.exports = "/simon-says-sound-1.c3617230.mp3";
-},{}],"assets/simon-says-sound-2.mp3":[function(require,module,exports) {
+},{}],"./simon-says-sound-2.mp3":[function(require,module,exports) {
 module.exports = "/simon-says-sound-2.e2028ed3.mp3";
-},{}],"assets/simon-says-sound-3.mp3":[function(require,module,exports) {
+},{}],"./simon-says-sound-3.mp3":[function(require,module,exports) {
 module.exports = "/simon-says-sound-3.dcafd85c.mp3";
-},{}],"assets/simon-says-sound-4.mp3":[function(require,module,exports) {
+},{}],"./simon-says-sound-4.mp3":[function(require,module,exports) {
 module.exports = "/simon-says-sound-4.a077541a.mp3";
 },{}],"src/index.js":[function(require,module,exports) {
 "use strict";
 
-var _simonSaysSound = _interopRequireDefault(require("../assets/simon-says-sound-1.mp3"));
-var _simonSaysSound2 = _interopRequireDefault(require("../assets/simon-says-sound-2.mp3"));
-var _simonSaysSound3 = _interopRequireDefault(require("../assets/simon-says-sound-3.mp3"));
-var _simonSaysSound4 = _interopRequireDefault(require("../assets/simon-says-sound-4.mp3"));
+var _simonSaysSound = _interopRequireDefault(require("./simon-says-sound-1.mp3"));
+var _simonSaysSound2 = _interopRequireDefault(require("./simon-says-sound-2.mp3"));
+var _simonSaysSound3 = _interopRequireDefault(require("./simon-says-sound-3.mp3"));
+var _simonSaysSound4 = _interopRequireDefault(require("./simon-says-sound-4.mp3"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 /**
  * DOM SELECTORS
@@ -161,9 +161,9 @@ var colors = ["red", "green", "blue", "yellow"];
  * - The `selector` property is set to the DOM selector for the pad.
  * - The `sound` property is set to an audio file using the Audio() constructor.
  *
- * Audio file for the green pad: "../assets/simon-says-sound-2.mp3"
- * Audio file for the blue pad: "../assets/simon-says-sound-3.mp3"
- * Audio file for the yellow pad: "../assets/simon-says-sound-4.mp3"
+ * Audio file for the green pad: "./simon-says-sound-2.mp3"
+ * Audio file for the blue pad: "./simon-says-sound-3.mp3"
+ * Audio file for the yellow pad: "./simon-says-sound-4.mp3"
  *
  */
 
@@ -545,7 +545,7 @@ window.playHumanTurn = playHumanTurn;
 window.checkPress = checkPress;
 window.checkRound = checkRound;
 window.resetGame = resetGame;
-},{"../assets/simon-says-sound-1.mp3":"assets/simon-says-sound-1.mp3","../assets/simon-says-sound-2.mp3":"assets/simon-says-sound-2.mp3","../assets/simon-says-sound-3.mp3":"assets/simon-says-sound-3.mp3","../assets/simon-says-sound-4.mp3":"assets/simon-says-sound-4.mp3"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./simon-says-sound-1.mp3":"./simon-says-sound-1.mp3","./simon-says-sound-2.mp3":"./simon-says-sound-2.mp3","./simon-says-sound-3.mp3":"./simon-says-sound-3.mp3","./simon-says-sound-4.mp3":"./simon-says-sound-4.mp3"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -570,7 +570,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57150" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51307" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
